@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "authRole",
+            "UnauthRoleArn": "arn:aws:iam::unauthRole",
+            "AuthRoleArn": "arn:aws:iam::authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "deployment",
+            "UnauthRoleName": "unauthRole",
+            "StackName": "stackName",
+            "StackId": "arn:aws:cloudformation:us-east-1:stackId"
+        }
+    }
+}
