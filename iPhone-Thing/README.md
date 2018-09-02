@@ -1,12 +1,12 @@
-# The iPhone Thing in AWS-IoT 
-### This mobile app will recieve any messages published to the topic "weatherUpdates/"
-### It will generate a certificate and attach your specified policy to it to allow you to recieve 
+# The iPhone Thing using AWS-IoT
+### This mobile app will receive any messages published to the topic "weatherUpdates/"
+### It will generate a certificate and attach your specified policy to it to allow you to recieve
 ### messages published to your specified topic. It also allows you to delete a certificate incase
 ### you want to create a new one for testing purposes.
 
 ## Prerequisites
 1. make sure you have aws-cli installed (or you can use the aws-console if it's easier)
-2. to have aws-cli installed you'll need to use brew to install the latest version of python 
+2. to have aws-cli installed you'll need to use brew to install the latest version of python
 3. use pip to download the aws-cli
 4. see https://docs.aws.amazon.com/cli/latest/reference/iot/index.html for more help and documentation
 
@@ -16,7 +16,7 @@
 2. Create your thing
 $ aws iot create-thing --thing-name "iPhoneThing"
 
-3. Create a policy for your thing by creating a new json file 
+3. Create a policy for your thing by creating a new json file
 $ touch policyDocument.json
 edit the file to add the following
 {
@@ -45,4 +45,3 @@ $ aws iot create-policy --policy-name "iPhonePolicy" --policy-document file://po
 5. No need to attach the policy to our thing because the mobile app client will attach it for us when we specify the policy in the Constants.swift file
 
 6. Fill in credentials in Constants.swift file, they can be found in your aws-console or through aws-cli
-
