@@ -4,8 +4,8 @@ This mobile app will receive any messages published to the topic "weatherUpdates
 ## Prerequisites
 1. Quick Start using Expo development server where you can easily launch your app
 using a barcode scanner that wraps your app
-https://facebook.github.io/react-native/docs/getting-started
-OR
+https://facebook.github.io/react-native/docs/getting-started<br />
+OR<br />
 1. Production Start following the 'release' steps where you can launch your app
 from anywhere without a development server needed
 https://facebook.github.io/react-native/docs/running-on-device.html#2-configure-release-scheme
